@@ -1,0 +1,51 @@
+Question,Answer
+Explain the concept of the Virtual DOM and how it differs from the Real DOM.,"The Virtual DOM is a lightweight, in-memory representation of the real DOM. React uses it to minimize direct DOM manipulation, improving performance by updating only changed elements."
+"What is rehydration in SSR (Server-Side Rendering), and how does it work in frameworks like Next.js?","Rehydration is the process of attaching event listeners to static HTML rendered on the server, allowing the page to become interactive on the client side."
+How would you handle large form validation and dynamic inputs using React and Formik/Yup?,Use Formik for managing form state and Yup for schema-based validation. Dynamically add/remove fields using `FieldArray` in Formik.
+"Compare different state management solutions in React (Redux, Context API, Zustand, Recoil).","Redux is suitable for large apps with global state, Context API is good for small apps, Zustand is minimal and efficient, Recoil provides atomic state management."
+How does the event loop work in the browser?,"The event loop processes the call stack and task queue, allowing asynchronous code to run non-blocking operations."
+Describe how Webpack and Babel work together in the modern JS build process.,"Webpack bundles modules, while Babel transpiles modern JavaScript into backward-compatible code."
+What are the pros and cons of micro-frontends? How would you implement them?,"Pros: independent deployment, scalability. Cons: complexity, potential performance issues. Implement using module federation, iframes, or custom elements."
+How does tree shaking work in modern JavaScript bundlers?,"Tree shaking eliminates unused code during the bundling process, reducing final bundle size."
+Explain content security policy (CSP) and how you would implement it in a frontend app.,CSP is a security feature to prevent XSS attacks. Implement via HTTP headers or meta tags to restrict resource loading.
+What is Critical Rendering Path? How would you optimize it for performance?,"CRP is the sequence of steps to render content on screen. Optimize by minimizing CSS/JS, inlining critical CSS, and lazy-loading assets."
+"How do you handle long lists efficiently in React (e.g., 10,000+ items)?",Use virtualization libraries like `react-window` or `react-virtualized` to render only visible items.
+Describe lazy loading and code-splitting. How does it improve performance?,"Lazy loading loads resources only when needed. Code-splitting breaks code into smaller chunks, reducing initial load time."
+How do service workers enable offline-first web applications?,"Service workers cache assets and intercept network requests, allowing offline access."
+What is the difference between hydration and client-side rendering?,Hydration is attaching interactivity to pre-rendered HTML; client-side rendering builds the DOM in-browser entirely.
+Explain the impact of CORS in frontend development. How do you resolve related issues?,CORS restricts cross-origin requests. Resolve by setting appropriate CORS headers on the server.
+What are controlled vs uncontrolled components in React?,Controlled components have their state managed by React; uncontrolled ones use refs to access the DOM directly.
+What is the role of `useMemo` and `useCallback` in React optimization?,"`useMemo` memoizes values, `useCallback` memoizes functions to prevent unnecessary re-renders."
+"How does debouncing work in JavaScript, and where is it useful in frontend?","Debouncing limits the rate at which a function executes, useful in search inputs or resize events."
+What are the advantages of using CSS-in-JS libraries like styled-components?,"Scoped styling, dynamic styles, and removal of unused styles."
+How do media queries work in responsive design?,They apply styles based on device characteristics like width or orientation.
+Describe the box model and its significance in layout design.,"Box model includes margin, border, padding, and content. Helps in spacing and layout design."
+How does the `z-index` property work and what are stacking contexts?,`z-index` sets element stack order. A stacking context is formed by certain properties (like position or opacity).
+"What is the purpose of the `rel=""noopener noreferrer""` attribute on anchor tags?",Prevents security vulnerabilities and performance issues when opening links in new tabs.
+How do Single Page Applications (SPAs) differ from Multi Page Applications (MPAs)?,SPAs load a single HTML file and use JS routing; MPAs reload the page on each route.
+Describe how routing works in React using React Router.,React Router uses the browser history API to manage routing without full page reloads.
+"What is the shadow DOM, and how does it relate to web components?","Shadow DOM encapsulates component styles and markup, preventing style leakage."
+How would you manage environment variables in a frontend project?,Use `.env` files and access variables with `process.env` in build tools.
+What is the role of `aria-*` attributes in accessible web design?,`aria-*` attributes provide additional context for screen readers to enhance accessibility.
+Describe Cross-Site Scripting (XSS) and how to prevent it in frontend applications.,XSS injects malicious scripts. Prevent with input sanitization and CSP.
+What are web accessibility (a11y) best practices for modern websites?,"Use semantic HTML, labels for inputs, keyboard navigation, and ARIA roles."
+How do `flexbox` and `grid` differ in layout design?,"Flexbox is one-dimensional (row or column), Grid is two-dimensional (row and column)."
+"What is the difference between `localStorage`, `sessionStorage`, and `cookies`?","`localStorage` persists data with no expiration, `sessionStorage` lasts per tab session, cookies are sent with requests."
+"What is the use of `contentEditable`, and what should developers be cautious of?",It allows inline editing. Be cautious of security and input handling.
+Explain CSS specificity and how conflicts are resolved.,Specificity determines which style rule applies. Inline > ID > Class > Tag.
+How do you optimize images for the web?,"Use correct formats, compression tools, and responsive sizes."
+What is the difference between `id` and `class` in HTML/CSS?,"`id` is unique, `class` can be reused across multiple elements."
+What are semantic HTML elements? Give examples.,"Semantic elements describe meaning (e.g., `<header>`, `<article>`, `<footer>`)."
+How is an external stylesheet linked in an HTML file?,Using `<link rel='stylesheet' href='style.css'>` in the `<head>`.
+What is the use of the `<meta>` tag?,"Defines metadata like character set, viewport settings, and SEO info."
+"What are the different types of CSS: inline, internal, external?",Inline: in the element. Internal: in `<style>` tag. External: linked CSS file.
+What does the `position` property in CSS do? Explain different values.,"Specifies element positioning. Values: static, relative, absolute, fixed, sticky."
+What are pseudo-classes in CSS? Give examples.,"Pseudo-classes style elements based on state, like `:hover`, `:focus`."
+What is the difference between `==` and `===` in JavaScript?,"`==` checks value with type coercion, `===` checks value and type."
+What are JavaScript data types?,"String, Number, Boolean, Object, Null, Undefined, Symbol, BigInt."
+How do you create a function in JavaScript? Give an example.,Using `function name() {}` or `const name = () => {}`.
+What are events in JavaScript? How do you attach an event listener?,"Events are actions like clicks. Use `addEventListener('click', function)`."
+What does `this` refer to in JavaScript?,It refers to the object that is executing the current function.
+How do you loop through an array in JavaScript?,"Using `for`, `forEach`, `map`, or `for...of`."
+What is the use of `console.log()`?,It logs data to the browser console for debugging.
+How do you make an API request in JavaScript?,Using `fetch()` or libraries like Axios.
