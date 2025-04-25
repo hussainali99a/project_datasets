@@ -1,0 +1,51 @@
+Question,Answer
+Explain the concept of CAP theorem in distributed systems?,"CAP theorem states that a distributed system can only guarantee two out of the following three: Consistency, Availability, and Partition Tolerance."
+"What is eventual consistency, and where is it used?","Eventual consistency is a model used in distributed systems where data will become consistent over time, commonly used in systems like DynamoDB and Cassandra."
+How does OAuth 2?0 work and what are its key components?,"OAuth 2.0 is an authorization framework that allows third-party services to exchange tokens securely. Key components include Resource Owner, Client, Authorization Server, and Resource Server."
+"What are microservices, and how do they differ from monolithic architecture?","Microservices are small, independent services that communicate over APIs. They differ from monolithic architecture by promoting modularity and scalability."
+What is the difference between horizontal and vertical scaling?,Horizontal scaling adds more machines; vertical scaling increases resources of existing machines.
+Explain ACID properties in databases?,"ACID stands for Atomicity, Consistency, Isolation, and Durability — ensuring reliable database transactions."
+How does database indexing work and what are its drawbacks?,Indexing improves data retrieval speed by creating data structures (like B-Trees). Drawbacks include increased storage and slower write operations.
+How would you implement caching in a web application?,"Use tools like Redis or Memcached to store frequently accessed data, improving response time and reducing DB load."
+Explain message queuing and how tools like RabbitMQ or Kafka work?,Message queues decouple services by sending messages between producers and consumers asynchronously.
+What is containerization and how does Docker help in backend development?,Containerization packages applications with dependencies. Docker standardizes and simplifies deployment across environments.
+What are RESTful APIs and how are they different from GraphQL?,"RESTful APIs expose endpoints mapped to resources. GraphQL allows clients to query specific fields, reducing over-fetching."
+What is middleware in backend frameworks?,"Middleware functions execute during request-response cycles to perform tasks like logging, authentication, or modifying requests."
+"How do web sockets work, and when would you use them?","Web sockets provide full-duplex communication channels over a single TCP connection, ideal for real-time apps."
+What is the difference between PUT and PATCH HTTP methods?,"PUT updates the entire resource, while PATCH performs a partial update."
+How do you secure APIs from unauthorized access?,"Use HTTPS, API keys, JWT, OAuth2, rate limiting, and input validation."
+What is rate limiting and how can it be implemented?,"Rate limiting restricts the number of requests a user can make. Use tools like Nginx, Redis, or middleware."
+How does session management work in web applications?,"Sessions store user data on the server using session IDs, typically with cookies."
+What are WebHooks and how are they different from APIs?,"WebHooks are event-driven callbacks sent to external systems, while APIs require active polling."
+How do you handle file uploads securely in a backend system?,"Validate file type/size, scan for malware, store securely, and use signed URLs."
+What is CSRF and how can it be prevented?,CSRF is a type of attack that forces users to execute unwanted actions. Prevent using CSRF tokens and SameSite cookies.
+Explain the role of reverse proxies like Nginx in backend architecture?,"Reverse proxies route requests, handle load balancing, caching, and SSL termination."
+What is a load balancer and how does it work?,Distributes incoming traffic across multiple servers to improve performance and reliability.
+Describe JWT and its use in authentication?,"JWT (JSON Web Token) is a compact, self-contained token used for securely transmitting user info."
+What are environment variables and why are they important?,Environment variables store config data securely and separately from code.
+What is ORM and give examples of popular ORMs?,"Object Relational Mapping lets you interact with databases using objects. Examples: Sequelize, SQLAlchemy, Django ORM."
+How do background jobs work and when should you use them?,"Background jobs run asynchronously using queues, useful for long tasks like email sending."
+Explain the concept of API versioning?,"API versioning allows changes without breaking existing clients. Use URI versioning (e.g., /v1/) or headers."
+How do you handle database migrations?,"Use migration tools to version and apply schema changes (e.g., Alembic, Flyway, Django migrations)."
+What is the difference between SQL and NoSQL databases?,"SQL databases use structured schema (e.g., PostgreSQL), NoSQL is flexible and document-based (e.g., MongoDB)."
+What is a 500 Internal Server Error and common causes?,"It means the server encountered an error. Causes: null pointers, unhandled exceptions, misconfigurations."
+What is a backend in web development?,"Backend handles server-side logic, databases, and APIs."
+What is a server?,A server is a computer that provides data or services to other computers (clients).
+What is a database?,A structured collection of data that can be accessed and managed.
+What is an API?,API (Application Programming Interface) allows communication between software components.
+What are HTTP methods? Name a few?,"Actions used in HTTP requests: GET, POST, PUT, DELETE."
+What is the difference between GET and POST?,GET retrieves data; POST sends data to the server.
+What is a status code in HTTP? Give examples?,"Numeric response from server. 200: OK, 404: Not Found, 500: Server Error."
+What is JSON?,JSON (JavaScript Object Notation) is a lightweight data format for APIs.
+What is a framework? Name some backend frameworks?,"A framework provides structure and tools. Examples: Django, Express.js, Laravel."
+What is SQL?,SQL (Structured Query Language) is used to interact with relational databases.
+What is an endpoint in API development?,A URL path that represents a specific resource or action.
+How do you connect a backend to a database?,"Use connection libraries/drivers (e.g., psycopg2 for PostgreSQL)."
+What is a route in backend development?,A route defines a path and the handler function for requests.
+What is authentication vs authorization?,Authentication verifies identity; authorization checks permissions.
+What is a cookie?,A small file stored in the browser to remember information.
+What is a POST request used for?,To send data to the server for processing or storage.
+What is the difference between frontend and backend?,Frontend is what users see; backend powers the logic and database.
+What does CRUD stand for?,"Create, Read, Update, Delete — basic operations on data."
+What is logging and why is it important?,"Logging records system activity, helping debug and monitor behavior."
+What is an error handler in backend?,A function or module to catch and manage runtime errors.
